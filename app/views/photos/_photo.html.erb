@@ -1,0 +1,17 @@
+<div class="box img">
+		
+	<tr>
+	<td><%= image_tag photo.image %></td>
+        <td><%= photo.description %></td>
+
+        <td><%= link_to 'Show', photo %></td>
+
+        <% if current_user == photo.user %>
+        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+        <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+
+	</tr>
+
+</div>
+	

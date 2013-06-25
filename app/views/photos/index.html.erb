@@ -1,0 +1,35 @@
+<div class= "hero-unit">
+	<% if user_signed_in? %>
+		<div class= "well">
+			<h3>Travel Photo Share</h3>
+			<p>the new home for your travel photos</p>
+			</br>
+			<%= link_to "Upload Photos!", new_photo_path, class: "btn btn-large" %>
+		</div>
+		<%= render 'countrynav' %>
+
+		<%= render @photos %>
+		</br>
+
+
+	<% else %>
+				
+			<div class="well">
+				<h1>Travel Photo Share</h1>
+				</br>
+				<%= render 'countrynav' %>
+					<div class="boxbig">
+					<%= image_tag("DSCF4224.jpg") %>
+					</div>
+				</br>
+				<h4>the new home for your travel photos</h4>
+				</br>
+			</div>
+			<%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-large"	 %>
+			
+	<% end %>
+</div>
+  
+
+
+

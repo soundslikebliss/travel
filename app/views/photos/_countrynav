@@ -1,0 +1,10 @@
+<div class="well">
+		<ul class="nav nav-pills">
+		  <li class="active">
+		  <li><%= link_to "Africa", "categories/1" %></li>
+		  <li><%= link_to "Asia", "categories/2" %></li>
+		  <li><%= link_to "Europe", "categories/3" %></li>
+		  <li><%= link_to "N. America", "categories/4" %></li>
+		  <li><%= link_to "S. America", "categories/5" %></li>
+		</ul>
+</div>

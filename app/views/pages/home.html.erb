@@ -1,0 +1,19 @@
+<div class= "hero-unit">
+<% if user_signed_in? %>
+
+<%= link_to "Upload Photos!", new_photo_path, class: "btn btn-large" %>
+</br>
+</br>
+<h1>Rad Travel Photos Here</h1>
+<% else %>
+
+		<h1>Travel Photo Share</h1>
+		<p>the new home for your travel photos</p>
+			</br>
+			</br>
+
+	<%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-large" %>
+
+
+<% end %>
+</div>
