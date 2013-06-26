@@ -16,6 +16,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'paperclip'
+gem 'aws-sdk'
 
 
 # Gems used only for assets and not required
