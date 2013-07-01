@@ -3,7 +3,8 @@ class Photo < ActiveRecord::Base
 	belongs_to :user
 	belongs_to :category
 
-  	attr_accessible :title, :description, :category_id, :image, :image_file_name
+  	attr_accessible :title, :description, :category_id, :image
+
   	has_attached_file :image, styles: { medium: "320x240>"}
 
 

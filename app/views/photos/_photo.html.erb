@@ -1,17 +1,18 @@
-<div class="box img">
+<div class="box">
 		
-	<tr>
-	<td><%= image_tag photo.image %></td>
-        <td><%= photo.description %></td>
-
-        <td><%= link_to 'Show', photo %></td>
-
-        <% if current_user == photo.user %>
-        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-        <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-
-	</tr>
-
+    <%= link_to (image_tag photo.image(:medium)), photo %>
+    <p class="description">
+        <%= photo.description %>
+    </p>
+    <p>
+        <strong>
+            Posted by <%= photo.user.name %>
+        </strong>
+    </p>
+    <% if current_user == photo.user %>
+        <p>
+          <%= link_to 'Edit', edit_photo_path(photo) %>
+          <%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </p>
+    <% end %>
 </div>
-	

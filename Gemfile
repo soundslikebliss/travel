@@ -17,6 +17,8 @@ gem 'devise'
 gem 'simple_form'
 gem 'paperclip'
 gem 'aws-sdk'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 
 # Gems used only for assets and not required

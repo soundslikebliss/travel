@@ -6,6 +6,7 @@ FirstApp::Application.routes.draw do
   resources :photos
 
   devise_for :users
+  
   root :to => 'photos#index'
   get 'about' => 'pages#about'
   get 'Africa' => 'pages#Africa'
